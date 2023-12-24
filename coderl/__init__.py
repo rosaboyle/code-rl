@@ -6,7 +6,7 @@ from gym import spaces
 
 class CodeCompilerEnv(gym.Env):
     def __init__(self):
-        super(CodeCompilorEnv, self).__init__()
+        super(CodeCompilerEnv, self).__init__()
         # Define the action and observation spaces
         self.action_space = spaces.Box(low=0, high=255, shape=(1000,), dtype='uint8')  # Placeholder
         self.observation_space = spaces.Discrete(2)  # Success or failure
